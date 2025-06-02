@@ -1,4 +1,4 @@
-.logo {
+.header__logo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,27 +9,27 @@
   margin-right: auto;
 }
 
-.logo__image {
+.header__logo-image {
   max-width: 32px;
   height: auto;
 }
 
-.logo__text {
+.header__logo-text {
   padding-top: 22px;
 }
 
 @media screen and (max-width: 540px) {
-  .logo {
+  .header__logo {
     max-width: 188px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
   }
-  .logo__image {
+  .header__logo-image {
     max-width: 23.6px;
   }
 
-  .logo__text {
+  .header__logo-text {
     max-width: 188.6197967529297px;
   }
 }
