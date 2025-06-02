@@ -1,0 +1,26 @@
+.footer {
+  color: white;
+  padding-top: 92px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__copyright {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-bottom: 24px;
+}
+
+@media screen and (max-width=1024) {
+  .footer {
+    padding-top: 88px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footer {
+    padding-top: 64px;
+  }
+}
