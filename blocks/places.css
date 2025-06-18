@@ -1,6 +1,7 @@
 .places {
   margin-top: 0;
 }
+
 .places__item {
   display: grid;
   column-gap: 40px;
@@ -13,15 +14,15 @@
   margin-top: 80px;
 }
 
-.places__item__left-column {
+.places__item-column_left {
   max-width: 460px;
 }
 
-.places__item__right-column {
+.places__item-column_right {
   max-width: 484px;
 }
 
-.places__item__title {
+.places__title {
   font-family: "Inter black";
   font-size: 72px;
   color: white;
@@ -29,7 +30,7 @@
   margin-bottom: 0px;
 }
 
-.places__item__photo {
+.places__photo {
   margin-top: 48px;
   max-width: 460px;
   max-height: 460px;
@@ -38,11 +39,11 @@
   height: 100%;
 }
 
-.places__item__photo:hover {
+.places__photo:hover {
   filter: brightness(50%);
 }
 
-.places__item__button {
+.places__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,16 +64,16 @@
   padding: 0;
 }
 
-.places__item__button:hover {
+.places__button:hover {
   background: linear-gradient(90deg, #0278fe40 0%, #003a7b40 99.98%);
 }
 
-.places__item__website {
+.places__website {
   margin-bottom: 48px;
   margin-top: 107px;
 }
 
-.places__item__website__url-heading {
+.places__website-url-heading {
   color: #aaaaaa;
   text-decoration: none;
   font-family: "Inter";
@@ -80,14 +81,14 @@
   margin-bottom: 8px;
 }
 
-.places__item__website__artist {
+.places__website-artist {
   color: white;
   font-family: "Inter";
   font-size: 18px;
   margin: 0;
 }
 
-.places__item__paragraph {
+.places__paragraph {
   color: white;
   font-family: "Inter";
   font-size: 18px;
@@ -106,42 +107,46 @@
     margin-top: 88px;
     grid-template-columns: 352px 340px;
   }
-  .places__item__left-column {
+
+  .places__item-column_left {
     max-width: 340px;
   }
 
-  .places__item__right-column {
+  .places__item-column_right {
     max-width: 352px;
   }
 
-  .places__item__photo {
+  .places__photo {
     max-width: 340px;
     max-height: 340px;
   }
 
-  .places__item__title {
+  .places__title {
     font-size: 42px;
     margin-top: 22px;
   }
 
-  .places__item__paragraph {
+  .places__paragraph {
     font-size: 16px;
   }
 
-  .places__item__website {
+  .places__website {
     margin-top: 0px;
     padding-top: 0px;
   }
-  .places__item__website__url-heading {
+
+  .places__website-url-heading {
     margin-bottom: 8px;
   }
 }
+
 @media screen and (max-width: 735px) {
   .places {
     max-width: 100%;
     padding-left: 16px;
     padding-right: 16px;
   }
+
   .places__item {
     max-width: 100%;
     gap: 10px;
@@ -150,30 +155,33 @@
     margin-right: auto;
   }
 
-  .places__item__left-column {
+  .places__item-column_left {
     width: 100%;
   }
 
-  .places__item__right-column {
+  .places__item-column_right {
     width: 100%;
   }
 
-  .places__item__title {
+  .places__title {
     width: 100%;
   }
-  .places__item__photo {
+
+  .places__photo {
   }
 
-  .places__item__button {
+  .places__button {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 540px) {
   .places {
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
+
   .places__item {
     grid-template-columns: 1fr;
     max-width: 100%;
@@ -192,16 +200,18 @@
       "paragraph"
       "button";
   }
-  .places__item__left-column {
+
+  .places__item-column_left {
     max-width: 100%;
     display: contents;
   }
 
-  .places__item__right-column {
+  .places__item-column_right {
     max-width: 100%;
     display: contents;
   }
-  .places__item__title {
+
+  .places__title {
     font-size: 32px;
     grid-area: title;
     margin-top: 0;
@@ -210,7 +220,7 @@
     max-width: calc(100% - 32px);
   }
 
-  .places__item__photo {
+  .places__photo {
     max-width: 305px;
     height: 305px;
     grid-area: photo;
@@ -221,19 +231,21 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .places__item__website {
+
+  .places__website {
     max-width: 100%;
     grid-area: website;
     margin-top: 30px;
     margin-bottom: 30px;
   }
 
-  .places__item__paragraphs-container {
+  .places__paragraphs-container {
     grid-area: paragraph;
     padding-top: 5px;
     height: auto;
   }
-  .places__item__paragraph {
+
+  .places__paragraph {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -243,16 +255,18 @@
     padding-left: 16px;
     padding-right: 16px;
   }
-  .places__item__website__url-heading {
+
+  .places__website-url-heading {
     padding-left: 16px;
     max-width: calc(100% - 32px);
   }
-  .places__item__website__artist {
+
+  .places__website-artist {
     max-width: calc(100% - 32px);
     padding-left: 16px;
   }
 
-  .places__item__button {
+  .places__button {
     grid-area: button;
     margin-top: 30px;
     max-width: calc(100% - 32px);
