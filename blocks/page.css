@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #2a2c2f;
+  box-sizing: border-box;
 }
 .page {
   max-width: 1280px;
@@ -23,5 +24,7 @@ body {
     max-width: 100%;
     margin: 0;
     padding: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

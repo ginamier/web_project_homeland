@@ -1,8 +1,9 @@
 .footer {
   color: white;
-  padding-top: 92px;
+  padding-top: 12px;
   display: flex;
   align-items: center;
+  font-family: "Inter";
 }
 
 .footer__copyright {
