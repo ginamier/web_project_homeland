@@ -43,6 +43,11 @@
 }
 
 .places__item__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  line-height: 1;
   border: none;
   border-radius: 4px;
   color: white;
@@ -131,16 +136,52 @@
     margin-bottom: 8px;
   }
 }
+@media screen and (max-width: 735px) {
+  .places {
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .places__item {
+    max-width: 100%;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .places__item__left-column {
+    width: 100%;
+  }
+
+  .places__item__right-column {
+    width: 100%;
+  }
+
+  .places__item__title {
+    width: 100%;
+  }
+  .places__item__photo {
+  }
+
+  .places__item__button {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 540px) {
+  .places {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
   .places__item {
     grid-template-columns: 1fr;
-    max-width: 320px;
+    max-width: 100%;
     gap: 0;
     padding-top: 50px;
-    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 0;
     margin-bottom: 0;
     display: grid;
     grid-template-areas:
@@ -152,31 +193,36 @@
       "button";
   }
   .places__item__left-column {
-    max-width: 320px;
+    max-width: 100%;
     display: contents;
   }
 
   .places__item__right-column {
-    max-width: 320px;
+    max-width: 100%;
     display: contents;
   }
   .places__item__title {
     font-size: 32px;
-    padding-left: 16px;
     grid-area: title;
     margin-top: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: calc(100% - 32px);
   }
 
   .places__item__photo {
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 305px;
+    height: 305px;
     grid-area: photo;
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
   .places__item__website {
-    max-width: 320px;
-    padding-left: 16px;
+    max-width: 100%;
     grid-area: website;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -188,23 +234,29 @@
     height: auto;
   }
   .places__item__paragraph {
-    max-width: 320px;
+    max-width: 100%;
     margin-left: 0;
     margin-right: 0;
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
     margin-top: 25px;
     margin-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .places__item__website__url-heading {
-    max-width: 320px;
+    padding-left: 16px;
+    max-width: calc(100% - 32px);
+  }
+  .places__item__website__artist {
+    max-width: calc(100% - 32px);
+    padding-left: 16px;
   }
 
   .places__item__button {
-    margin-left: 16px;
-    margin-right: 16px;
     grid-area: button;
     margin-top: 30px;
+    max-width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
